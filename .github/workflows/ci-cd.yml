@@ -25,6 +25,8 @@ jobs:
         uses: azure/docker-login@v2
         with:
           login-server: ${{ secrets.ACR_LOGIN_SERVER }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Build and Push Image to ACR
         run: |
