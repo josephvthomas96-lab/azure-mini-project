@@ -3,3 +3,4 @@ const app = express();
 app.get('/', (req, res) => res.send('Hello from Azure! Deployed via CI/CD ✅'));
 app.get('/health', (req, res) => res.json({status: 'ok'}));
 app.listen(3000, () => console.log('App running on port 3000'));
+// trigger pipeline
